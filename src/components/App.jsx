@@ -6,7 +6,7 @@ import ColorPicker from "./ColorPicker";
 export const App = () => {
   return (
     <div>
-      <Counter initialValue = {10}/>
+      <Counter title = {'It is my first counter on React'} initialValue = {10}/>
       <Dropdown/>
       <ColorPicker options = {colorPicker} initialOptnIndx = {0}/>
     </div>

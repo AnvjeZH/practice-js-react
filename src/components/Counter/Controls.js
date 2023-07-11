@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './Counter.module.css';
 
-export default function Controls({ onIncrement, onDecrement }) {
+export default function Controls({onIncrement, onDecrement }) {
     return (
         <div className={css.counter_controls}>
         <button className={css.counter_btn} type="button" onClick={onIncrement}>
