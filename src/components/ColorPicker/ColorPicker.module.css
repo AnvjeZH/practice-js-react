@@ -1,0 +1,28 @@
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+.color_name {
+    text-align: center;
+}
+
+.color_palette {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100px;
+}
+.color_swatch {
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: transform 250ms linear;
+}
+.color_active {
+    transform: scale(1.2);
+}

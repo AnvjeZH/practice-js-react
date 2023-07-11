@@ -1,16 +1,14 @@
+import Counter from "./Counter";
+import Dropdown from "./Dropdown";
+import colorPicker from "./data/colorPickerArr";
+import ColorPicker from "./ColorPicker";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Counter initialValue = {10}/>
+      <Dropdown/>
+      <ColorPicker options = {colorPicker} initialOptnIndx = {0}/>
     </div>
   );
 };
