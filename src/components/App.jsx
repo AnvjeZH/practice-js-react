@@ -62,10 +62,10 @@ class App extends Component {
       todo.text.toLowerCase().includes(normalizedFiler)
     );
   };
-  
-  // handlerSubmitForm = data => {
-  //   console.log(data)
-  // }
+// Ця функція до компонента Form
+  handlerSubmitForm = data => {
+    console.log(data)
+  }
 
   render() {
     const { todos, filter } = this.state;
@@ -87,10 +87,10 @@ class App extends Component {
           toggle={this.toggleCompleted}
         />
 
-        {/* <Counter title={'It is my first counter on React'} initialValue={10} />
+        <Counter title={'It is my first counter on React'} initialValue={10} />
         <Dropdown />
         <ColorPicker options={colorPicker} initialOptnIndx={0} />
-        <Form onSubmit={this.handlerSubmitForm} /> */}
+        <Form onSubmit={this.handlerSubmitForm} />
       </div>
     );
   }
