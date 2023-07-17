@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import css from './ColorPicker.module.css';
 
-class ColorPicker extends Component {
+class ColorPicker extends PureComponent {
   static defaultProps = {
     initialOptnIndx: 0,
   };
   state = {
     activeOptnIndx: this.props.initialOptnIndx
   };
+
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   return nextState.activeOptnIndx !== this.state.activeOptnIndx
+  // }
+
   makeOptnActive = index => {
     const optionClassName = [css.color_swatch];
 
@@ -25,6 +30,8 @@ class ColorPicker extends Component {
     const { activeOptnIndx } = this.state;
     const { options } = this.props;
     const { label } = options[activeOptnIndx];
+
+
     return (
       <div>
         <h1 className={css.title}>Color Picker</h1>
